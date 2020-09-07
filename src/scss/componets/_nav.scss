@@ -1,0 +1,29 @@
+.navbar-brand {
+	@include fluid-type(16px, 22px);
+}
+
+.img-icon-todo {
+	padding: 0.2rem;
+	max-width: 50px;
+	margin-right: 1rem;
+}
+
+.navbar-nav {
+	@include mediaa(minmd) {
+		align-items: center;
+	}
+
+	& .nav-item {
+		&:first-child {
+			@include mediaa(minmd) {
+				margin-right: 2rem;
+			}
+		}
+	}
+
+	& .nav-link {
+		&:hover {
+			cursor: pointer;
+		}
+	}
+}
